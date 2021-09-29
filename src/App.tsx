@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import AllComments from './components/comments';
 import './App.css';
 
 function App() {
@@ -13,49 +14,22 @@ function App() {
 
           {/* image and name */}
           <div className="flex space-x-2 items-center">
-            <img className="w-12 h-12 rounded-full" src="/profileImages/handsome.jpg"></img>
-            <span className='font-semibold text-lg text-white'>Chayanin Suatap 610631100</span>
+            <img className="w-12 h-12 rounded-full" src="/profileImages/cat.jpg"></img>
+            <span className='font-semibold text-lg text-white'>Nuttapong Boonsala 630610744</span>
           </div>
 
           {/* status message */}
-          <p className='text-white'>Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207</p>
+          <p className='text-white'>Installing time {'>'} coding time</p>
 
           {/* like section */}
           <div className='flex items-center'>
             <img className='w-4 h-4 mr-1' src='/like.svg'></img>
-            <p className='text-gray-300'>100 คน</p>
+            <p className='text-gray-300'>หลาย คน</p>
           </div>
-
+          
         </div>
-
-        {/* comments section */}
-        <div className="">
-
-          {/* normal comment */}
-          <div className="flex p-2 items-start space-x-2">
-            <img className="w-10 w-10 rounded-full" src="/profileImages/lisa.jpg"></img>
-            <div className="bg-gray-500 rounded-lg p-2">
-              <p className="font-semibold text-white">Lisa</p>
-              <p className='text-white'>ตัวอย่าง Template จ้า</p>
-              {/* like section (จะไม่แสดงถ้าไม่มีใครไลค์เลย) */}
-              <div className='flex items-center'>
-                <img className='w-4 h-4 mr-1' src='/like.svg'></img>
-                <p className='text-gray-300'>999 คน</p>
-              </div>
-            </div>
-          </div>
-
-          {/* replies */}
-          {/* ต่างกันตรงที่มี padding มากกว่าเท่านั้น (pl-14) */}
-          <div className="flex p-2 items-start space-x-2 pl-14">
-            <img className="w-10 w-10 rounded-full" src="/profileImages/puppy.jpg"></img>
-            <div className="bg-gray-500 rounded-lg p-2">
-              <p className="font-semibold text-white">หมาน้อย</p>
-              <p className='text-white'>เม้นค้าบ</p>
-            </div>
-          </div>
-
-        </div>
+        
+        <AllComments/>
 
       </div>
     </div>
@@ -63,3 +37,33 @@ function App() {
 }
 
 export default App;
+
+
+        // {/* comments section */}
+        // <div className="">
+
+        //   {/* normal comment */}
+        //   <div className="flex p-2 items-start space-x-2">
+        //     <img className="w-10 w-10 rounded-full" src="/profileImages/lisa.jpg"></img>
+        //     <div className="bg-gray-500 rounded-lg p-2">
+        //       <p className="font-semibold text-white">Lisa</p>
+        //       <p className='text-white'>ตัวอย่าง Template จ้า</p>
+        //       {/* like section (จะไม่แสดงถ้าไม่มีใครไลค์เลย) */}
+        //       <div className='flex items-center'>
+        //         <img className='w-4 h-4 mr-1' src='/like.svg'></img>
+        //         <p className='text-gray-300'>999 คน</p>
+        //       </div>
+        //     </div>
+        //   </div>
+
+        //   {/* replies */}
+        //   {/* ต่างกันตรงที่มี padding มากกว่าเท่านั้น (pl-14) */}
+        //   <div className="flex p-2 items-start space-x-2 pl-14">
+        //     <img className="w-10 w-10 rounded-full" src="/profileImages/puppy.jpg"></img>
+        //     <div className="bg-gray-500 rounded-lg p-2">
+        //       <p className="font-semibold text-white">หมาน้อย</p>
+        //       <p className='text-white'>เม้นค้าบ</p>
+        //     </div>
+        //   </div>
+        
+        // </div>
